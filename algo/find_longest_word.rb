@@ -7,7 +7,7 @@ def find_longest_word(sentence)
   longest_word = ""
 
   words.each  do |word|
-    if longest <= word.length
+    if longest < word.length
       longest = word.length 
       longest_word = word 
     end
@@ -19,7 +19,7 @@ end
 puts "TESTING find_longest_word..."
 puts
 
-result = find_longest_word("What is the longest word in this phrase")
+result = find_longest_word("What is the longest word in this phrase?")
 
 puts "Your method returned:"
 puts result

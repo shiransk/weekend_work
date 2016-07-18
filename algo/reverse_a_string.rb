@@ -3,7 +3,22 @@
 # comes with Ruby!
 
 def reverse_a_string(string)
+words = string.split("")
 
+index = words.length 
+index= index - 1 
+
+reverse_word = [] 
+
+loop do 
+  reverse_word<< words[index] 
+  index -= 1 
+  if index < 0
+    break
+  end
+end
+
+reverse_word.join
 end
 
 # Driver code - don't touch anything below this line.
